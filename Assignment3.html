@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="Assignment3.css">
+  <script src="Assignment3.js" defer></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Internship Registration Form</h2>
+    <form id="registrationForm">
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <div class="form-row">
+          <input type="text" id="firstName" placeholder="First" required>
+          <input type="text" id="lastName" placeholder="Last" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="birthDate">Birth Date</label>
+        <input type="date" id="birthDate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="confirmPassword" required>
+          <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility()"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group terms">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the <a href="#">terms & conditions</a>.</label>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
